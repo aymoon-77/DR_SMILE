@@ -1,0 +1,774 @@
+/*! imports */
+@font-face {
+    font-family: 'NotoNaskhArabic';
+    src: url('../assets/font/NotoNaskhArabic-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NotoNaskhArabic';
+    src: url('../assets/font/NotoNaskhArabic-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/*! reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*! global */
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'NotoNaskhArabic';
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #faf7ee;
+}
+
+:root {
+    --white: rgb(255, 255, 255);
+    --links: rgb(5, 38, 57);
+    --links-hover: rgb(137, 153, 162);
+    --button-color: rgb(231, 202, 113);
+    --bg-section: rgb(48, 112, 133);
+    --bg-section-visit-loaction: rgb(244, 246, 243);
+    --footer: rgb(38, 105, 128);
+}
+
+.contianerr {
+    position: relative;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+}
+
+.nav-link.active {
+    border-bottom: 4px solid var(--footer);
+}
+
+/*! body */
+/*? drop down menue  */
+.dropdown-menu {
+    background-color: rgb(84, 127, 161);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.dropdown-item {
+    margin-bottom: .4em;
+    color: white;
+}
+/*? navbar */
+.navbar {
+    background-color: transparent !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: var(--white) !important;
+}
+
+.navbar-nav .nav-item .nav-link,
+.d-flex .btn {
+    color: var(--links) !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--links-hover) !important;
+}
+
+.d-flex .btn {
+    width: 8em;
+    background-color: var(--button-color);
+    color: var(--links) !important;
+    font-size: 23px;
+    border: 0px solid black;
+}
+
+.d-flex .btn:hover {
+    opacity: 0.5;
+}
+
+/*? img-smile */
+.img-smile {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.img-smile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 50, 100, 0.5);
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.textt1 {
+    width: fit-content;
+    border-right: 5px solid transparent;
+    font-size: 24px;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 7s steps(100) forwards, cursor .6s step-end infinite alternate;
+    -webkit-animation: typingg 7s steps(100) forwards, cursor .6s step-end infinite alternate;
+}
+
+@keyframes typingg {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.main-header h2 {
+    font-size: 3em;
+    position: absolute;
+    color: #FFFFFF;
+    top: 30%;
+    right: 5%;
+    font-size: 60px;
+    line-height: 1.6;
+}
+
+.textt2 {
+    font-size: 1.1em;
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 5%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.main-header button {
+    background-color: var(--button-color);
+    color: var(--links);
+    position: absolute;
+    top: 63%;
+    right: 5%;
+    width: 10em;
+    line-height: 1.6;
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 40px;
+}
+
+.img-smile button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-smile button:hover {
+    opacity: 0.5;
+}
+
+/*? ortho section */
+.dentistry {
+    background-color: #296b83;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    padding: 100px;
+    position: relative;
+    color: #ffffff;
+    width: 90%;
+    margin: 130px auto 0 auto;
+    border-radius: 15px;
+}
+
+.den {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 100px;
+    padding: 50px;
+    border: 1px solid #411847;
+    border-radius: 20px;
+}
+
+.den div h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.den div .fsp {
+    margin-bottom: 20px;
+}
+
+.den ul li {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.quote {
+    width: 70%;
+    margin-top: 20px;
+    position: relative;
+    padding-right: 15px;
+    font-style: italic;
+    color: white;
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #e7ca71;
+}
+
+.dentistry .den figure img {
+    height: 400px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+/*? orthodontics section */
+.orthodontics {
+    background-color: #faf7ee;
+}
+
+.orthodontics>p {
+    text-align: center;
+    font-size: 1.4em;
+    width: 70%;
+    margin: 150px auto 200px auto;
+}
+
+.orthodontics div {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orthodontics div:first-child p {
+    line-height: 2.3;
+}
+
+.orthodontics div .flex:nth-child(2) {
+    flex-direction: row-reverse;
+    margin-right: 11em;
+}
+
+.orthodontics div .flex:nth-child(2)>div {
+    transform: translateX(-5em);
+    -webkit-transform: translateX(-5em);
+    -moz-transform: translateX(-5em);
+    -ms-transform: translateX(-5em);
+    -o-transform: translateX(-5em);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12em;
+}
+
+.flex div p {
+    width: 70%;
+    margin-top: 1em;
+    line-height: 1.9;
+}
+
+.img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 10px 5px 10px rgba(5, 9, 55, 0.608);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.swiper {
+    width: 90%;
+    height: 500px;
+}
+
+/*? patient rate */
+.success-section {
+    text-align: center;
+    padding: 50px 0;
+    margin: -3em 0 4em 0;
+}
+
+.success-section h2 {
+    color: #28211d;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.success-section p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 2em;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.video-box {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-box video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*? accordian */
+.accordion-container {
+    max-width: 800px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.accordion-item {
+    background-color: #e6f0f1;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-header h2 {
+    font-size: 24px;
+    color: #0e4f54;
+    margin: 0;
+}
+
+.accordion-header .symbol {
+    font-size: 24px;
+    color: #0e4f54;
+    font-weight: bold;
+}
+
+.accordion-content {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #2b2b2b;
+    display: none;
+}
+
+.accordion-item.open .accordion-content {
+    display: block;
+}
+
+.accordion-item.open .symbol {
+    content: "—";
+}
+
+.show-more-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#showMoreBtn {
+    background-color: #0e4f54;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#showMoreBtn:hover {
+    background-color: #0c4046;
+}
+
+/*? location  */
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 5em 0px;
+}
+
+.map {
+    box-shadow: 5px 5px 10px #28211d;
+}
+
+/*? first footer */
+.floating-logo img {
+    width: 100%;
+}
+
+.topmobilesvg {
+    display: none;
+}
+
+footer a {
+    color: #e5b59c;
+}
+
+footer {
+    line-height: 2;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    background-color: var(--bg-section);
+    padding: 20px;
+    color: var(--links);
+}
+
+footer article {
+    padding: 40px;
+}
+
+.firstFooter img {
+    width: 150px;
+}
+
+.firstFooter p,
+.firstFooter a {
+    font-size: 15px;
+    color: var(--links);
+}
+
+.firstFooter .day {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstFooter .day span {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/*? scfooter  */
+footer .scFooter h4,
+footer .foFooter h4 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+footer .scFooter .practice li a {
+    font-size: 15px;
+    transition: transform 0.4s ease-in-out;
+    display: inline-block;
+    color: var(--links);
+}
+
+footer .scFooter .practice li a:hover {
+    color: var(--button-color);
+    transform: scale(0.9);
+}
+
+.practice li::before {
+    content: "- ";
+    color: var(--links-hover);
+}
+
+/*? fofooter  */
+.socialLinks2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.socialLinks2 i {
+    border: 1.5px solid var(--links);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1px;
+    height: 1px;
+    border-radius: 100%;
+    padding: 13px;
+    color: var(--links);
+}
+
+.socialLinks2 i:hover {
+    background-color: var(--button-color);
+    color: var(--links);
+}
+
+/*? endFooter  */
+.endFooter {
+    margin-top: 70px;
+    font-size: 15px;
+}
+
+/*?button to top */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+/*! media query */
+@media screen and (max-width:600px) {
+
+    /*? nav bar */
+    .navbar {
+        background-color: white !important;
+    }
+
+    .nav-link.active {
+        width: fit-content;
+        border-bottom: 4px solid var(--footer);
+    }
+
+    .main-header h1 {
+        font-size: 1.8em;
+    }
+
+    .contianerr {
+        transform: translateY(0);
+        display: block;
+
+    }
+
+    /*? img-smile */
+    .img-smile img {
+        width: 100% !important;
+    }
+
+    .main-header h2 {
+        font-size: 2em;
+    }
+
+    .main-header button {
+        top: 66%;
+    }
+
+    .slider-container {
+        width: 90%;
+    }
+
+    /*? dentistry done right */
+    .dentistry {
+        padding: 20px;
+    }
+
+    .den {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .den div h2 {
+        font-size: 29px;
+    }
+
+    .den div .fsp {
+        font-size: 18px;
+    }
+
+    .den ul li {
+        width: 130%;
+        font-size: 15px;
+    }
+
+    .quote {
+        width: 100%;
+    }
+
+    /* orthodontics info  */
+    .orthodontics div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .orthodontics div:first-child p {
+        line-height: 2;
+        font-size: 16px;
+
+    }
+
+    .orthodontics div .flex:nth-child(2) {
+
+        flex-direction: row-reverse;
+        margin-right: 0;
+    }
+
+    .orthodontics div .flex:nth-child(2)>div {
+        transform: translateX(0);
+    }
+
+    .img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20%;
+        margin-right: 35px;
+        box-shadow: 10px 5px 10px rgba(5, 9, 55, 0.608);
+    }
+
+    /*? location  */
+    .location {
+        gap: 20px;
+        margin: 3em auto;
+        text-align: center;
+    }
+
+    .map {
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 3px 3px 8px #28211d;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-1em);
+        -webkit-transform: translateX(-1em);
+        -moz-transform: translateX(-1em);
+        -ms-transform: translateX(-1em);
+        -o-transform: translateX(-1em);
+    }
+
+    /*? footer */
+    .floating-logo img {
+        display: none;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        background: url(../../assets/Images/bg-header-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: var(--bg-section);
+        color: var(--links);
+    }
+
+    footer article {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .firstFooter img {
+        width: 120px;
+    }
+
+    .firstFooter p,
+    .firstFooter a {
+        font-size: 14px;
+    }
+
+    .firstFooter .day span,
+    footer .scFooter h4,
+    footer .foFooter h4 {
+        font-size: 24px;
+    }
+
+    .socialLinks2 {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .socialLinks2 i {
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .endFooter {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}

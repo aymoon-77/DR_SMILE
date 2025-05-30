@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>خدمات الأسنان</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <style>
+
+ 
+/* 
+    .dentist{
+    margin-bottom: 2em;
+}
+.dentist h2{
+    text-align: center;
+    margin: 3em;
+    color: var(--links);
+}
+.dentist .dentistImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.dentist .dentistImage figure img{
+    width: 400px;
+    box-shadow: 5px 5px 10px var(--links);
+    margin-bottom: 4em;
+}
+.service-box {
+    position: relative;
+    width: 400px; 
+    height: 270px;
+    overflow: hidden;
+    border-radius: 10px; 
+}
+
+    .service-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-overlay {
+    color: white;
+    background: rgba(48, 112, 133,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.service-box:hover .service-overlay {
+    opacity: 1;
+}
+.service-box:hover img {
+    transform: scale(1.1); 
+}
+.service-button {
+    text-align: center;
+    margin: 3em 0;
+}
+.service-button button{
+    background-color: rgb(231, 202, 113);
+    color:  rgb(5, 38, 57) !important;
+    font-size: 23px;
+    padding: .5em;
+    border-radius: 8px;
+    border-color: transparent;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.service-button button:hover{
+    background-color: #e0a800;
+} */
+.dentist{
+    margin-bottom: 2em;
+}
+.dentist h2{
+    text-align: center;
+    margin: 3em;
+    color: var(--links);
+}
+.dentist .dentistImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.dentist .dentistImage figure img{
+    width: 400px;
+    box-shadow: 5px 5px 10px var(--links);
+    margin-bottom: 4em;
+}
+.service-box {
+    position: relative;
+    width: 400px; 
+    height: 270px;
+    overflow: hidden;
+    border-radius: 10px; 
+}
+
+.service-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-overlay {
+    color: var(--links);
+    background: rgba(48, 112, 133,0.7);
+    /* background: rgba(0, 50, 100, 0.7);  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.service-box:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-box:hover img {
+    transform: scale(1.1); 
+}
+.service-button {
+    text-align: center;
+    margin: 3em 0;
+}
+.service-button button{
+    background-color: var(--button-color);
+    color: var(--links) !important;
+    font-size: 23px;
+    padding: .5em;
+    border-radius: 8px;
+    border-color: transparent;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.service-button button:hover{
+    background-color: #e0a800;
+}
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      z-index: 10;
+    }
+
+    .swiper-button-next {
+      right: 10px;
+      left: auto;
+    }
+
+    .swiper-button-prev {
+      left: 10px;
+      right: auto;
+    }
+  </style>
+</head>
+<body>
+    <section class="dentist block  contianerr">
+        <h2>
+          خدمات مقدمة خصيصا لك
+        </h2>
+  
+
+  <!-- Slider -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide dentistImage">
+        <a href="../services-page/page4/page4.html">
+            <figure class="service-box">
+                <img src="../assets/Images/dental-implants-1000x500.jpg" alt="زراعة الأسنان">
+                <div class="service-overlay">
+                  <h3>زراعة الأسنان</h3>
+                  <p>تمتع بأسنان قوية ومظهر طبيعي من خلال أحدث تقنيات تركيب الأسنان، سواء كانت تركيبات ثابتة أو متحركة، لتستعيد ثقتك وراحة فمك.</p>
+                </div>
+              </figure>
+        </a>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide dentistImage">
+        <a href="../services-page/page4/page4.html">
+            <figure class="service-box">
+                <img src="../assets/Images/dental-implants-1000x500.jpg" alt="زراعة الأسنان">
+                <div class="service-overlay">
+                  <h3>زراعة الأسنان</h3>
+                  <p>تمتع بأسنان قوية ومظهر طبيعي من خلال أحدث تقنيات تركيب الأسنان، سواء كانت تركيبات ثابتة أو متحركة، لتستعيد ثقتك وراحة فمك.</p>
+                </div>
+              </figure>
+        </a>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide dentistImage">
+        <a href="../services-page/page4/page4.html">
+            <figure class="service-box">
+                <img src="../assets/Images/dental-implants-1000x500.jpg" alt="زراعة الأسنان">
+                <div class="service-overlay">
+                  <h3>زراعة الأسنان</h3>
+                  <p>تمتع بأسنان قوية ومظهر طبيعي من خلال أحدث تقنيات تركيب الأسنان، سواء كانت تركيبات ثابتة أو متحركة، لتستعيد ثقتك وراحة فمك.</p>
+                </div>
+              </figure>
+        </a>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide dentistImage">
+        <a href="../services-page/page4/page4.html">
+            <figure class="service-box">
+                <img src="../assets/Images/dental-implants-1000x500.jpg" alt="زراعة الأسنان">
+                <div class="service-overlay">
+                  <h3>زراعة الأسنان</h3>
+                  <p>تمتع بأسنان قوية ومظهر طبيعي من خلال أحدث تقنيات تركيب الأسنان، سواء كانت تركيبات ثابتة أو متحركة، لتستعيد ثقتك وراحة فمك.</p>
+                </div>
+              </figure>
+        </a>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="swiper-slide dentistImage">
+        <a href="../services-page/page4/page4.html">
+            <figure class="service-box">
+                <img src="../assets/Images/dental-implants-1000x500.jpg" alt="زراعة الأسنان">
+                <div class="service-overlay">
+                  <h3>زراعة الأسنان</h3>
+                  <p>تمتع بأسنان قوية ومظهر طبيعي من خلال أحدث تقنيات تركيب الأسنان، سواء كانت تركيبات ثابتة أو متحركة، لتستعيد ثقتك وراحة فمك.</p>
+                </div>
+              </figure>
+        </a>
+      </div>
+    </div>
+
+    <!-- Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <div class="service-button">
+    <a href="#">
+    <button>مزيد من الخدمات  <i class="fa-solid fa-arrow-left fa-beat fa-xs"
+      style="color: #000000;"></i></button>
+    </a>
+  </div>
+    </section>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Init Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true, 
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2><span>Dr/Smile</span> Registration Form</h2>
+        <form id="registrationForm">
+            <label for="fullName">الاسم بالكامل:</label>
+            <input type="text" id="fullName" name="Full Name" required>
+
+            <label for="dob">تاريخ الميلاد:</label>
+            <input type="date" id="dob" name="Date of Birth" required>
+
+            <label for="gender">النوع:</label>
+            <select id="gender" name="Gender" required>
+                <option value="">اختار</option>
+                <option>ذكر</option>
+                <option>انثي</option>
+            </select>
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="Phone Number" required>
+
+            <label for="email">البريد الالكتروني :</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="address">عنوان:</label>
+            <textarea id="address" name="Address" rows="3" required></textarea>
+
+            <label for="appointmentDate">اي موعد تفضل:</label>
+            <input type="date" id="appointmentDate" name="Preferred Date" required>
+
+            <label for="reason">سبب الزياره:</label>
+            <textarea id="reason" name="Visit Reason" rows="3"></textarea>
+
+            <label for="service">الخدمة المطلوبة:</label>
+            <select id="service" name="Requested Service" required>
+                <option value="">اختر خدمة</option>
+                <option value="زراعة">زراعة</option>
+                <option value="فينيير">فينيير</option>
+                <option value="حشو">حشو</option>
+                <option value="تنظيف">تنظيف</option>
+                <option value="تقويم">تقويم</option>
+                <option value="تبييض">تبييض</option>
+            </select>
+            <button type="submit">ارسال</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function (e) {
+            e.preventDefault(); // يمنع الفورم من الإرسال الطبيعي
+
+            alert("تم إرسال البيانات بنجاح!");
+
+            // بعد عرض الـ alert، انقل المستخدم إلى صفحة الشكر
+            window.location.href = "http://127.0.0.1:5501/home%20page/home.html";
+        });
+    </script>
+</body>
+
+</html>

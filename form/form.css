@@ -1,0 +1,154 @@
+/*! imports */
+@font-face {
+  font-family: 'NotoNaskhArabic';
+  src: url('../assets/font/NotoNaskhArabic-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'NotoNaskhArabic';
+  src: url('../assets/font/NotoNaskhArabic-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --bg-body: #f3f4f6;
+  --form-bg: #ffffff;
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --text-color: #1f2937;
+  --label-color: #374151;
+  --input-border: #d1d5db;
+  --input-bg: #f9fafb;
+  --shadow: rgba(0, 0, 0, 1);
+  --shadow-hover: rgba(0, 0, 0, 0.3);
+}
+
+.contact-options {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.contact-options label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-options input[type="checkbox"] {
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #007bff;
+}
+
+body {
+  font-family:'NotoNaskhArabic' ;
+  font-weight: 700;
+  background: rgba(224, 242, 254, 0.3);
+  background: var(--bg-body);
+  /* background: linear-gradient(135deg, #2563eb, #f3f4f6); */
+  /* background: linear-gradient(135deg, #2563eb, #4f81bd, #f3f4f6); */
+  /* background: radial-gradient(circle, #2563eb, #f3f4f6); */
+  /* background: radial-gradient(circle, #3b82f6, #93c5fd, #f9fafb); */
+  /* background: radial-gradient(circle, rgba(37, 99, 235, 0.9), rgba(243, 244, 246, 0.7)); */
+  background-image:
+    radial-gradient(at 10% 20%, rgba(186, 230, 253, 0.4) 0%, transparent 50%),
+    radial-gradient(at 90% 80%, rgba(14, 165, 233, 0.3) 0%, transparent 50%);
+  padding: 20px;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  background: var(--form-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px var(--shadow);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-size: 20px;
+}
+
+.form-container:hover {
+  box-shadow: 0 15px 35px var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: var(--label-color);
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  transition: 0.3s ease;
+  font-size: 17px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  background-color: #fff;
+}
+
+button {
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+
+}
+
+button:active {
+  scale: 0.92;
+}
+
+button:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}

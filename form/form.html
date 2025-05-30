@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h2><span>Dr/Smile</span> Registration Form</h2>
+    <form action="https://formsubmit.co/ayman249arafa@gmail.com" method="POST">
+
+      <!-- FormSubmit settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5501/thanks/thanks.html">
+
+      <label for="fullName">الاسم بالكامل:</label>
+      <input type="text" id="fullName" name="Full Name" required>
+
+      <label for="dob">تاريخ الميلاد:</label>
+      <input type="date" id="dob" name="Date of Birth" required>
+      <br><br>
+      <span id="error-message" style="color: red; display: none;">يجب أن يكون عمر الشخص أكبر من 3 سنوات❌</span>
+
+      <label for="gender">النوع:</label>
+      <select id="gender" name="Gender" required>
+        <option value="">اختار</option>
+        <option>ذكر</option>
+        <option>انثى</option>
+      </select>
+
+      <label for="phoneNumber">رقم الهاتف:</label>
+      <input type="tel" id="phoneNumber" name="Phone Number" required>
+      <p id="phoneError" style="color:red;"></p>
+
+
+      <label for="email">البريد الالكتروني:</label>
+      <input type="email" id="email" name="Email" required>
+      <div id="result"></div>
+
+      <label for="address">العنوان:</label>
+      <textarea id="address" name="Address" rows="3" required></textarea>
+
+      <label for="appointmentDate">أي موعد تفضل:</label>
+      <input type="date" id="appointmentDate" name="Preferred Date" required>
+
+      <label for="reason">سبب الزيارة:</label>
+      <textarea id="reason" name="Visit Reason" rows="3"></textarea>
+
+      <label>اختر وسيلة التواصل المفضلة:</label>
+      <div class="contact-options">
+        <label><input name="contact_options[]" value="واتساب" type="checkbox" id="whatsapp"> واتساب</label>
+        <label><input name="contact_options[]" value="اتصال هاتفي" type="checkbox" id="phoneContact"> اتصال
+          هاتفي</label>
+        <label><input name="contact_options[]" value="بريد إلكتروني" type="checkbox" id="emailContact"> بريد
+          إلكتروني</label>
+      </div>
+
+
+      <label for="service">الخدمة المطلوبة:</label>
+      <select id="service" name="Requested Service" required>
+        <option disabled selected>اختر خدمة</option>
+        <option value="زراعة">زراعة</option>
+        <option value="فينيير">فينيير</option>
+        <option value="حشو">حشو</option>
+        <option value="تنظيف">تنظيف</option>
+        <option value="تقويم">تقويم</option>
+        <option value="تبييض">تبييض</option>
+      </select>
+
+      <ul style="color:rgb(0, 72, 255);">
+        <li>سيتم التواصل معك خلال 24 ساعة لتأكيد الموعد.</li>
+        <li>جميع المعلومات يتم التعامل معها بسرية تامة.</li>
+      </ul>
+
+      <button type="submit">ارسال</button>
+    </form>
+  </div>
+</body>
+<script src="./form.js"></script>
+
+</html>
